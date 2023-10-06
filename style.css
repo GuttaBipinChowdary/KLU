@@ -10,12 +10,13 @@ body {
 
 .about {
   background: #e0fbde;
-  background: linear-gradient(360deg, #f5fff5 0%, #ff0000 100%);
+  background: #a12d33;
   padding: 100px 0 20px 0;
   text-align: center;
 }
 
 .about h1 {
+  color: #f0ecec;
   font-size: 5rem;
   margin-bottom: 20px;
 }
@@ -28,25 +29,25 @@ h5 {
 
 .about p {
   font-size: 2rem;
-  color: #323030;
+  color: #f0ecec;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .about-info {
   margin: 2rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: left; */
 }
 
-.about-img img {
+/* .about-img img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
   object-fit: contain;
-}
+} */
 
 .about-info p {
   font-size: 2rem;
@@ -112,8 +113,28 @@ h5 {
   text-align: center;
   position: relative;
   font-family: Arial;
+  background: #e0fbde;
+  background: #100f0f;
+  padding: 100px 0 20px 0;
+  text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* Move it (define the animation) */
 @keyframes scroll-left {
@@ -131,3 +152,7 @@ h5 {
   background-color: rgb(13, 159, 0) !important;
   color: white;
 } */
+
+.light-red{
+  background-color: #a12d33;
+}
